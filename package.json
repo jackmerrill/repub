@@ -1,0 +1,48 @@
+{
+  "name": "repub",
+  "version": "1.0.0",
+  "description": "RePub is an open source framework for creating image voting websites.",
+  "main": "./src/app.js",
+  "scripts": {
+    "build": "yarn babel src -d dist",
+    "lint": "yarn eslint ./",
+    "start": "yarn build && nodemon dist/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jackmerrill/repub.git"
+  },
+  "keywords": [
+    "image",
+    "voting",
+    "website"
+  ],
+  "author": "Jack Merrill",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/jackmerrill/repub/issues"
+  },
+  "homepage": "https://github.com/jackmerrill/repub#readme",
+  "dependencies": {
+    "@babel/runtime": "^7.11.2",
+    "bcrypt": "^5.0.0",
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.10.0",
+    "sequelize": "^6.3.5",
+    "sqlite3": "^5.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@babel/plugin-transform-runtime": "^7.11.5",
+    "@babel/preset-env": "^7.11.5",
+    "eslint": "^7.9.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "nodemon": "^2.0.4",
+    "regenerator-runtime": "^0.13.7"
+  }
+}

@@ -102,3 +102,6 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Persistant Data for Docker
+persist_data/
